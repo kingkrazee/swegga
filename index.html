@@ -16,16 +16,16 @@
         <div class="rows">
          <div class="col">
              <div id="sidebar">
-                 <img src="./images/swegga.jpg">
+                 <img src="https://kingkrazee.github.io/host-/images/swegga.jpg">
              </div>
          </div>
         </div>
         <div class="col">
             <div id="banner">
-                <img src="./images/delivery.gif">
+                <img src="https://kingkrazee.github.io/host-/images/delivery.gif">
             </div>
             <div id="navigation">
-                <img src="./images/links.gif" alt="Links" usemap="#navmap">
+                <img src="https://kingkrazee.github.io/host-/images/links.gif" alt="Links" usemap="#navmap">
                 <map name="navmap">
                     <area shape="rect" coords="10,5,95,35" alt="home" href="order.html">
                     <area shape="rect" coords="105,5,190,35" alt="services" href="services.html">
@@ -59,9 +59,9 @@
                          <option value="blue">Blue</option>
                          <option value="pink">Pink</option>
                      </select></td>
-                     <td>150.95</td>
-                     <td><input type="text"></td>
-                     <td></td>
+                     <td class="price">150.95</td>
+                     <td class="quantity"><input type="text"></td>
+                     <td female-total total></td>
                  </tr>
                  <tr>
                      <td><a href="#">Male Ski Jackets</a></td>
@@ -75,24 +75,24 @@
                          <option value="blue">Blue</option>
                          <option value="pink">Pink</option>
                      </select></td>
-                     <td>180.95</td>
-                     <td><input type="text"></td>
-                     <td></td>
+                     <td class="price">180.95</td>
+                     <td class="quantity"><input type="text"></td>
+                     <td male-total total></td>
                  </tr>
                  <tr>
                      <td colspan="4">Click to confirm and process your order</td>
-                     <td><button type="submit">Total Price</button></td>
-                     <td></td>
+                     <td><button onclick="calculate()" type="submit">Total Price</button></td>
+                     <td overall-total></td>
                  </tr>
              </table>
              
             </div>
         </div>
     </div>
-   <br>
-	<hr>
-<footer>
-    <p class="feet">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &copy; Copyright Kayden Hendricks 2024.</p>
+   
+<footer class="feet">
+
+    <p >&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &copy; Copyright Kayden Hendricks 2024.</p>
 </footer>
 </div>
 <script src="./script/script.js" defer></script>
