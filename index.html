@@ -37,56 +37,59 @@
             <div class=heads>
              <p class="caption">Product Summary</p>
             </div>
-            <div class="tables">
-             <table>
-                 <tr>
-                     <th>Description</th>
-                     <th>Size</th>
-                     <th>Colour</th>
-                     <th>Price</th>
-                     <th>Quantity</th>
-                     <th>Total</th>
-                 </tr>
-                 <tr>
-                     <td><a href="#">Female Ski Jackets</a></td>
-                     <td><select name="sizes" id="sizes">
-                         <option value="small">Small</option>
-                         <option value="medium">Medium</option>
-                         <option value="large">Large</option>
-                     </select></td>
-                     <td><select name="colours" id="colours">
-                         <option value="red">Red</option>
-                         <option value="blue">Blue</option>
-                         <option value="pink">Pink</option>
-                     </select></td>
-                     <td class="price">150.95</td>
-                     <td class="quantity"><input type="text"></td>
-                     <td female-total total></td>
-                 </tr>
-                 <tr>
-                     <td><a href="#">Male Ski Jackets</a></td>
-                     <td><select name="sizes" id="sizes">
-                         <option value="small">Small</option>
-                         <option value="medium">Medium</option>
-                         <option value="large">Large</option>
-                     </select></td>
-                     <td><select name="colours" id="colours">
-                         <option value="red">Red</option>
-                         <option value="blue">Blue</option>
-                         <option value="pink">Pink</option>
-                     </select></td>
-                     <td class="price">180.95</td>
-                     <td class="quantity"><input type="text"></td>
-                     <td male-total total></td>
-                 </tr>
-                 <tr>
-                     <td colspan="4">Click to confirm and process your order</td>
-                     <td><button onclick="calculate()" type="submit">Total Price</button></td>
-                     <td overall-total></td>
-                 </tr>
-             </table>
-             
-            </div>
+            <form action="orders">
+
+                <div class="tables">
+                 <table>
+                     <tr>
+                         <th>Description</th>
+                         <th>Size</th>
+                         <th>Colour</th>
+                         <th>Price</th>
+                         <th>Quantity</th>
+                         <th>Total</th>
+                     </tr>
+                     <tr>
+                         <td><a href="#">Female Ski Jackets</a></td>
+                         <td><select name="sizes" id="sizes">
+                             <option value="small">Small</option>
+                             <option value="medium">Medium</option>
+                             <option value="large">Large</option>
+                         </select></td>
+                         <td><select name="colours" id="colours">
+                             <option value="red">Red</option>
+                             <option value="blue">Blue</option>
+                             <option value="pink">Pink</option>
+                         </select></td>
+                         <td class="price">150.95</td>
+                         <td class="quantity"><input type="text"></td>
+                         <td female-total total></td>
+                     </tr>
+                     <tr>
+                         <td><a href="#">Male Ski Jackets</a></td>
+                         <td><select name="sizes" id="sizes">
+                             <option value="small">Small</option>
+                             <option value="medium">Medium</option>
+                             <option value="large">Large</option>
+                         </select></td>
+                         <td><select name="colours" id="colours">
+                             <option value="red">Red</option>
+                             <option value="blue">Blue</option>
+                             <option value="pink">Pink</option>
+                         </select></td>
+                         <td class="price">180.95</td>
+                         <td class="quantity"><input type="text"></td>
+                         <td male-total total></td>
+                     </tr>
+                     <tr>
+                         <td colspan="4">Click to confirm and process your order</td>
+                         <td><button id="btn1" type="submit">Total Price</button></td>
+                         <td overall-total></td>
+                     </tr>
+                 </table>
+                 
+                </div>
+            </form>
         </div>
     </div>
    

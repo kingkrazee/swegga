@@ -75,3 +75,9 @@ td, th {
 input{
     width: 90px;
 }
+@media screen and (min-width: 480px) {
+	#page {
+	  min-width: 380px;
+	  margin: auto;
+	}
+  }

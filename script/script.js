@@ -1,3 +1,8 @@
+let button = document.getElementById('btn1')
+button.addEventListener('click', (event)=>{
+    event.preventDefault()
+    calculate()
+})
 function calculate() {
     const prices = document.querySelectorAll('.price');
     const quantities = document.querySelectorAll('.quantity input');
